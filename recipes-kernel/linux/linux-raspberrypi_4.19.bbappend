@@ -1,8 +1,8 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-LINUX_VERSION = "4.19.97"
+LINUX_VERSION = "4.19.102"
 
-SRCREV = "63739afcdd3662e9f9e1f04c81b63b743a12f9d1"
+SRCREV = "427e03f40ca95c267d98ae62e15721f1437fdfdf"
 
 SRC_URI += "file://ikconfig.cfg"
 
@@ -75,6 +75,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/gpio-poweroff.dtbo \
     overlays/gpio-shutdown.dtbo \
     overlays/hd44780-lcd.dtbo \
+    overlays/hdmi-backlight-hwhack-gpio.dtbo \
     overlays/hifiberry-amp.dtbo \
     overlays/hifiberry-dac.dtbo \
     overlays/hifiberry-dacplusadc.dtbo \
@@ -169,6 +170,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/sdhost.dtbo \
     overlays/sdio.dtbo \
     overlays/sdtweak.dtbo \
+    overlays/sh1106-spi.dtbo \
     overlays/smi-dev.dtbo \
     overlays/smi-nand.dtbo \
     overlays/smi.dtbo \
@@ -192,6 +194,8 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/spi-gpio40-45.dtbo \
     overlays/spi-rtc.dtbo \
     overlays/ssd1306.dtbo \
+    overlays/ssd1306-spi.dtbo \
+    overlays/ssd1351-spi.dtbo \
     overlays/superaudioboard.dtbo \
     overlays/sx150x.dtbo \
     overlays/tc358743-audio.dtbo \
