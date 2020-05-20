@@ -7,6 +7,6 @@ SRC_URI = " file://dnsmasq.conf"
 S = "${WORKDIR}"
 
 do_install () {
-	install -d ${D}${sysconfdir}/dnsmasq.conf
+	install -d ${D}${sysconfdir}
 	install -m 0644 ${WORKDIR}/dnsmasq.conf ${D}${sysconfdir}/
 }
