@@ -25,9 +25,12 @@ RPI_STUFF = " \
 "
 
 IMAGE_INSTALL += " \
+    firewall \
     ${DEV_EXTRAS} \
     ${RPI_STUFF} \
     ${WIFI} \
+    ${SECURITY_TOOLS} \
+    ${WIREGUARD} \
 "
 
 
