@@ -1191,4 +1191,6 @@ dispmanx_offline=1
 enable_uart=1
 
 ## Disable RPi3 bluetooth to enable serial console on UART0
-dtoverlay=pi3-disable-bt
+#dtoverlay=pi3-disable-bt
+dtoverlay=pi3-miniuart-bt
+core_freq = 250

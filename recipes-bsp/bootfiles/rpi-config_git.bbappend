@@ -19,7 +19,10 @@ do_deploy_append() {
 
     if [ -n "${ENABLE_RPI3_SERIAL_CONSOLE}" ]; then
         echo "" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
-        echo "dtoverlay=pi3-disable-bt" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+#        echo "dtoverlay=pi3-disable-bt" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+        echo "dtoverlay=pi3-miniuart-bt" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+        echo "core_freq = 250" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+
     fi
 
     if [ -n "${BAUDRATE_UART}" ]; then
